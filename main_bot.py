@@ -14,7 +14,8 @@ import asyncio # 비동기 작업을 위한 라이브러리
 CREATE_CHANNEL_ID = 1450363133431517224 
 
 # 2. 봇 토큰 설정 
-TOKEN = "MTQ1MDAyODIwMDg1MDc1MTU4MQ.GXHREw.aSeUHcGobC3NVA8l5Wtoo2dHaIeD_i2K91paQw"
+acess_token = os.environt["BOT_TOKEN"]
+client.run(acess_token)
 
 # 3. 경고 시스템 및 명령어 관련 설정
 WARNING_FILE = 'warnings.pkl' 
@@ -395,4 +396,5 @@ else:
         bot.run(TOKEN)
     except Exception as e:
         print(f"봇 실행에 실패했습니다: {e}")
+
         print("토큰이 올바른지, 디스코드 개발자 포털에서 필요한 Intent(특히 Member, Message Content, Voice State Intent)를 활성화했는지 확인해주세요.")
