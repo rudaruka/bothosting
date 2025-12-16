@@ -1,2 +1,6 @@
-discord.py
-requests
+discord==0.16.12
+from discord.ext import commands==0.16.12
+os==0.16.12
+math==0.16.12
+pickle==0.16.12
+asyncio==0.16.12
